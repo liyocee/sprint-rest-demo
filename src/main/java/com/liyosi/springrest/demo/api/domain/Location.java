@@ -1,9 +1,11 @@
 package com.liyosi.springrest.demo.api.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by liyosi on Sep, 2018
  */
-public class Location {
+public class Location implements Serializable {
   private String street;
   private String city;
   private String state;

@@ -1,16 +1,16 @@
 package com.liyosi.springrest.demo.api.domain;
 
-import java.sql.Timestamp;
+import java.io.Serializable;
 
 /**
  * Created by liyosi on Sep, 2018
  */
-public class BillingCard {
+public class BillingCard implements Serializable {
   private String type;
   private String number;
   private String iban;
   private String swift;
-  private Timestamp expirationDate;
+  private ExpirationDate expirationDate;
 
   public String getType() {
     return type;
@@ -44,11 +44,11 @@ public class BillingCard {
     this.swift = swift;
   }
 
-  public Timestamp getExpirationDate() {
+  public ExpirationDate getExpirationDate() {
     return expirationDate;
   }
 
-  public void setExpirationDate(Timestamp expirationDate) {
+  public void setExpirationDate(ExpirationDate expirationDate) {
     this.expirationDate = expirationDate;
   }
 }

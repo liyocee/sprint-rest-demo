@@ -1,25 +1,27 @@
 package com.liyosi.springrest.demo.api.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by liyosi on Sep, 2018
  */
-public class User {
-  private Gender gender;
+public class User implements Serializable {
+  private String gender;
   private Name name;
   private Location location;
   private String email;
   private Login login;
-  private String phone;
+  private java.lang.String phone;
   private Job job;
   private Billing billing;
   private String language;
   private String currency;
 
-  public Gender getGender() {
+  public String getGender() {
     return gender;
   }
 
-  public void setGender(Gender gender) {
+  public void setGender(String gender) {
     this.gender = gender;
   }
 
@@ -55,11 +57,11 @@ public class User {
     this.login = login;
   }
 
-  public String getPhone() {
+  public java.lang.String getPhone() {
     return phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(java.lang.String phone) {
     this.phone = phone;
   }
 

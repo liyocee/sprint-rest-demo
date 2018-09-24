@@ -1,9 +1,11 @@
 package com.liyosi.springrest.demo.api.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by liyosi on Sep, 2018
  */
-public class Job {
+public class Job implements Serializable {
   private String title;
   private String company;
 

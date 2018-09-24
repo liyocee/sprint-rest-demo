@@ -1,9 +1,11 @@
 package com.liyosi.springrest.demo.api.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by liyosi on Sep, 2018
  */
-public class Login {
+public class Login implements Serializable {
   private String username;
   private String password;
   private String md5;
